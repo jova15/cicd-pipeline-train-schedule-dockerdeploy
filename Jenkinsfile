@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("jova15/train-schedule")
+                    app = docker.build("jvcloud/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
